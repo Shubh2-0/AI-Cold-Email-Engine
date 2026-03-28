@@ -1,0 +1,39 @@
+name: Send HR Emails
+
+on:
+  schedule:
+    # 9:30 AM IST = 4:00 AM UTC (Tuesday, Wednesday, Thursday)
+    - cron: '0 4 * * 2,3,4'
+  workflow_dispatch: # Manual trigger button
+
+jobs:
+  send-emails:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup config
+        run: |
+          cp config.github.json config.json
+
+      - name: Send email batch
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+        run: |
+          python email_sender.py --count 15
+
+      - name: Commit sent log and updated contacts
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add contacts.csv sent_log.csv || true
+          git commit -m "Update sent log — $(date +'%Y-%m-%d')" || echo "No changes"
+          git push || echo "Nothing to push"

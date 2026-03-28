@@ -1,0 +1,15 @@
+{
+    "sender_name": "Shubham Bhati",
+    "sender_email": "shubhambhati226@gmail.com",
+    "app_password": "FROM_GITHUB_SECRETS",
+    "resume_path": "Shubham_Bhati_Resume.pdf",
+    "daily_limit": 15,
+    "delay_between_emails_seconds": 180,
+    "contacts_csv": "contacts.csv",
+    "sent_log": "sent_log.csv",
+    "subject_template": "Java Backend Engineer — 2+ Yrs | {company}",
+    "phone": "+91 6232133187",
+    "linkedin": "linkedin.com/in/bhatishubham",
+    "github": "github.com/Shubh2-0",
+    "portfolio": "shubh2-0.github.io"
+}

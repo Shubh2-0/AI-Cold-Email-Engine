@@ -1,0 +1,6 @@
+sent_log.csv
+__pycache__/
+*.pyc
+auto_runner.py
+auto_runner.bat
+run_emails.bat
