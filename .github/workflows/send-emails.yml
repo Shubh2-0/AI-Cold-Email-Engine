@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -34,6 +37,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add contacts.csv sent_log.csv || true
+          git add -f contacts.csv sent_log.csv || true
           git commit -m "Update sent log — $(date +'%Y-%m-%d')" || echo "No changes"
           git push || echo "Nothing to push"
