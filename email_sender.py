@@ -120,26 +120,50 @@ def get_email_body(contact, config):
     tier = contact["tier"]
 
     if tier == "TIER1":
-        interest = f"My experience aligns with {company}'s domain — I've built healthcare backends at IHX and enterprise integration microservices at AlignBits LLC."
+        body = f"""Hi {name},
+
+I'm a Java Backend Engineer currently at AlignBits LLC (2+ yrs exp), looking for backend roles at {company}.
+
+Tech: Java, Spring Boot, Microservices, REST APIs, MySQL
+Current: Building enterprise integration microservices at AlignBits LLC
+Previous: Healthcare backend systems at IHX
+Project: maakaalicreations.in — live e-commerce platform
+
+Notice Period: Immediate Joiner
+Location: Gurgaon (open to on-site, hybrid, or remote)
+
+Resume attached — please let me know if there's a suitable opening.
+
+Shubham Bhati
+{config['phone']} | {config['linkedin']}"""
+
     elif tier == "TIER2":
-        interest = f"My Spring Boot and distributed systems expertise aligns well with the engineering work at {company}."
+        body = f"""Hi {name},
+
+I'm a Java Backend Engineer (2+ yrs), currently at AlignBits LLC, exploring backend opportunities at {company}.
+
+Tech: Java, Spring Boot, Microservices, REST APIs, MySQL
+Current: Enterprise microservices serving 10+ clients at AlignBits
+Project: maakaalicreations.in — live e-commerce platform
+
+Notice Period: Immediate Joiner
+Location: Gurgaon (open to on-site, hybrid, or remote)
+
+Resume attached — happy to connect if there's a relevant opening.
+
+Shubham Bhati
+{config['phone']} | {config['linkedin']}"""
+
     else:
-        interest = f"I believe my Java backend experience can add value to {company}'s engineering team."
+        body = f"""Hi {name},
 
-    body = f"""Hi {name},
+I'm a Java Backend Engineer (2+ yrs) at AlignBits LLC, looking for backend/software engineer roles.
 
-I am Shubham Bhati — Java Backend Engineer with 2+ years experience, based in Gurgaon. I'd love to explore Backend/Software Engineer opportunities at {company}.
+Tech: Java, Spring Boot, Microservices, REST APIs, MySQL
+Notice Period: Immediate Joiner
+Location: Gurgaon (flexible)
 
-{interest}
-
-Currently at AlignBits LLC, I build Spring Boot microservices serving 10+ enterprise clients. Previously at IHX, I built healthcare backend systems.
-
-Highlights:
-  - Reduced manual debugging by 30% via AI automation
-  - Resolved 15+ critical production incidents
-  - Shipped a live product: maakaalicreations.in
-
-Open to remote, on-site, or relocation. Resume attached — happy to connect if there's a fit.
+Resume attached — please consider if {company} has relevant openings.
 
 Shubham Bhati
 {config['phone']} | {config['linkedin']}"""
@@ -154,41 +178,74 @@ def get_html_body(contact, config):
     tier = contact["tier"]
 
     if tier == "TIER1":
-        domain_line = (
-            f"My experience aligns with <strong>{company}</strong>'s domain &mdash; I've built healthcare backends at IHX "
-            f"and enterprise integration microservices at AlignBits LLC."
-        )
-    elif tier == "TIER2":
-        domain_line = (
-            f"My Spring Boot and distributed systems expertise aligns well with the engineering work at <strong>{company}</strong>."
-        )
-    else:
-        domain_line = (
-            f"I believe my Java backend experience can add value to <strong>{company}</strong>'s engineering team."
-        )
-
-    html = f"""<html>
+        html = f"""<html>
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p>I am <strong>Shubham Bhati</strong> &mdash; Java Backend Engineer with 2+ years experience, based in Gurgaon. I'd love to explore Backend/Software Engineer opportunities at <strong>{company}</strong>.</p>
+<p>I'm a Java Backend Engineer currently at AlignBits LLC (2+ yrs exp), looking for backend roles at <strong>{company}</strong>.</p>
 
-<p>{domain_line}</p>
+<table style="border-collapse: collapse; margin: 12px 0;">
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 4px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL</td></tr>
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Current</strong></td><td style="padding: 4px 0;">Building enterprise integration microservices at AlignBits LLC</td></tr>
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Previous</strong></td><td style="padding: 4px 0;">Healthcare backend systems at IHX</td></tr>
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Project</strong></td><td style="padding: 4px 0;"><a href="https://maakaalicreations.in" style="color: #1a73e8;">maakaalicreations.in</a> &mdash; live e-commerce platform</td></tr>
+</table>
 
-<p>Currently at AlignBits LLC, I build Spring Boot microservices serving 10+ enterprise clients. Previously at IHX, I built healthcare backend systems.</p>
+<p><strong>Notice Period:</strong> Immediate Joiner<br>
+<strong>Location:</strong> Gurgaon (open to on-site, hybrid, or remote)</p>
 
-<p><strong>Highlights:</strong></p>
-<ul>
-    <li>Reduced manual debugging by 30% via AI automation</li>
-    <li>Resolved 15+ critical production incidents</li>
-    <li>Shipped a live product: <a href="https://maakaalicreations.in">maakaalicreations.in</a></li>
-</ul>
-
-<p>Open to remote, on-site, or relocation. Resume attached — happy to connect if there's a fit.</p>
+<p>Resume attached — please let me know if there's a suitable opening.</p>
 
 <p>
 <strong>Shubham Bhati</strong><br>
-{config['phone']} | <a href="https://{config['linkedin']}">LinkedIn</a>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
+</p>
+</body>
+</html>"""
+
+    elif tier == "TIER2":
+        html = f"""<html>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
+<p>Hi {name},</p>
+
+<p>I'm a Java Backend Engineer (2+ yrs), currently at AlignBits LLC, exploring backend opportunities at <strong>{company}</strong>.</p>
+
+<table style="border-collapse: collapse; margin: 12px 0;">
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 4px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL</td></tr>
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Current</strong></td><td style="padding: 4px 0;">Enterprise microservices serving 10+ clients at AlignBits</td></tr>
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Project</strong></td><td style="padding: 4px 0;"><a href="https://maakaalicreations.in" style="color: #1a73e8;">maakaalicreations.in</a> &mdash; live e-commerce platform</td></tr>
+</table>
+
+<p><strong>Notice Period:</strong> Immediate Joiner<br>
+<strong>Location:</strong> Gurgaon (open to on-site, hybrid, or remote)</p>
+
+<p>Resume attached &mdash; happy to connect if there's a relevant opening.</p>
+
+<p>
+<strong>Shubham Bhati</strong><br>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
+</p>
+</body>
+</html>"""
+
+    else:
+        html = f"""<html>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
+<p>Hi {name},</p>
+
+<p>I'm a Java Backend Engineer (2+ yrs) at AlignBits LLC, looking for backend/software engineer roles.</p>
+
+<table style="border-collapse: collapse; margin: 12px 0;">
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 4px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL</td></tr>
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 4px 0;">Immediate Joiner</td></tr>
+<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Location</strong></td><td style="padding: 4px 0;">Gurgaon (flexible)</td></tr>
+</table>
+
+<p>Resume attached &mdash; please consider if <strong>{company}</strong> has relevant openings.</p>
+
+<p>
+<strong>Shubham Bhati</strong><br>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
 </p>
 </body>
 </html>"""
