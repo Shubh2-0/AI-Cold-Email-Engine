@@ -31,7 +31,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
         run: |
-          python email_sender.py --count 15
+          python email_sender.py --count 25
 
       - name: Commit sent log and updated contacts
         run: |
