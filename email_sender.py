@@ -122,17 +122,24 @@ def get_email_body(contact, config):
     if tier == "TIER1":
         body = f"""Hi {name},
 
-I'm a Java Backend Engineer currently at AlignBits LLC (2+ yrs exp), looking for backend roles at {company}.
+Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
 
-Tech: Java, Spring Boot, Microservices, REST APIs, MySQL
-Current: Building enterprise integration microservices at AlignBits LLC
-Previous: Healthcare backend systems at IHX
-Project: maakaalicreations.in — live e-commerce platform
+Currently at AlignBits, working on Justransform — an enterprise B2B
+integration platform serving 10+ clients across REST, SFTP, AS2, SOAP.
+
+My contributions:
+  - Delivered client-facing features and production bug fixes
+  - Added new protocol modules (AS2) in production
+  - Java migration (11→17), production deployments (dev + prod)
+  - Production monitoring — alarms, cron jobs, scheduled tasks
+  - Previously: Healthcare backend at IHX
+
+Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 
 Notice Period: Immediate Joiner
-Location: Gurgaon (open to on-site, hybrid, or remote)
+Location: Gurgaon (on-site / hybrid / remote)
 
-Resume attached — please let me know if there's a suitable opening.
+Resume attached.
 
 Shubham Bhati
 {config['phone']} | {config['linkedin']}"""
@@ -140,14 +147,21 @@ Shubham Bhati
     elif tier == "TIER2":
         body = f"""Hi {name},
 
-I'm a Java Backend Engineer (2+ yrs), currently at AlignBits LLC, exploring backend opportunities at {company}.
+Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
 
-Tech: Java, Spring Boot, Microservices, REST APIs, MySQL
-Current: Enterprise microservices serving 10+ clients at AlignBits
-Project: maakaalicreations.in — live e-commerce platform
+Currently at AlignBits, working on Justransform — enterprise B2B
+integration platform serving 10+ clients.
+
+My contributions:
+  - Client-facing features and production bug fixes
+  - New protocol modules added in production
+  - Production deployments and monitoring
+  - Previously: Healthcare backend at IHX
+
+Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 
 Notice Period: Immediate Joiner
-Location: Gurgaon (open to on-site, hybrid, or remote)
+Location: Gurgaon (on-site / hybrid / remote)
 
 Resume attached — happy to connect if there's a relevant opening.
 
@@ -157,9 +171,12 @@ Shubham Bhati
     else:
         body = f"""Hi {name},
 
-I'm a Java Backend Engineer (2+ yrs) at AlignBits LLC, looking for backend/software engineer roles.
+Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
 
-Tech: Java, Spring Boot, Microservices, REST APIs, MySQL
+Currently at AlignBits — enterprise B2B integration platform.
+Previously: Healthcare backend at IHX.
+
+Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 Notice Period: Immediate Joiner
 Location: Gurgaon (flexible)
 
@@ -182,19 +199,26 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p>I'm a Java Backend Engineer currently at AlignBits LLC (2+ yrs exp), looking for backend roles at <strong>{company}</strong>.</p>
+<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
 
-<table style="border-collapse: collapse; margin: 12px 0;">
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 4px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL</td></tr>
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Current</strong></td><td style="padding: 4px 0;">Building enterprise integration microservices at AlignBits LLC</td></tr>
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Previous</strong></td><td style="padding: 4px 0;">Healthcare backend systems at IHX</td></tr>
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Project</strong></td><td style="padding: 4px 0;"><a href="https://maakaalicreations.in" style="color: #1a73e8;">maakaalicreations.in</a> &mdash; live e-commerce platform</td></tr>
+<p>Currently at AlignBits, working on <strong>Justransform</strong> — an enterprise B2B integration platform serving <strong>10+ clients</strong> across REST, SFTP, AS2, SOAP.</p>
+
+<p><strong>My contributions:</strong></p>
+<ul>
+<li>Delivered client-facing features and production bug fixes</li>
+<li>Added new protocol modules (AS2) in production</li>
+<li>Java migration (11→17), production deployments (dev + prod)</li>
+<li>Production monitoring — alarms, cron jobs, scheduled tasks</li>
+<li>Previously: Healthcare backend at IHX</li>
+</ul>
+
+<table style="border-collapse: collapse; margin: 8px 0;">
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 3px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 3px 0;">Immediate Joiner</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Location</strong></td><td style="padding: 3px 0;">Gurgaon (on-site / hybrid / remote)</td></tr>
 </table>
 
-<p><strong>Notice Period:</strong> Immediate Joiner<br>
-<strong>Location:</strong> Gurgaon (open to on-site, hybrid, or remote)</p>
-
-<p>Resume attached — please let me know if there's a suitable opening.</p>
+<p>Resume attached.</p>
 
 <p>
 <strong>Shubham Bhati</strong><br>
@@ -208,16 +232,22 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p>I'm a Java Backend Engineer (2+ yrs), currently at AlignBits LLC, exploring backend opportunities at <strong>{company}</strong>.</p>
+<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
 
-<table style="border-collapse: collapse; margin: 12px 0;">
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 4px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL</td></tr>
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Current</strong></td><td style="padding: 4px 0;">Enterprise microservices serving 10+ clients at AlignBits</td></tr>
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Project</strong></td><td style="padding: 4px 0;"><a href="https://maakaalicreations.in" style="color: #1a73e8;">maakaalicreations.in</a> &mdash; live e-commerce platform</td></tr>
+<p>Currently at AlignBits, working on <strong>Justransform</strong> — enterprise B2B integration platform serving <strong>10+ clients</strong>.</p>
+
+<ul>
+<li>Client-facing features and production bug fixes</li>
+<li>New protocol modules added in production</li>
+<li>Production deployments and monitoring</li>
+<li>Previously: Healthcare backend at IHX</li>
+</ul>
+
+<table style="border-collapse: collapse; margin: 8px 0;">
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 3px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 3px 0;">Immediate Joiner</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Location</strong></td><td style="padding: 3px 0;">Gurgaon (on-site / hybrid / remote)</td></tr>
 </table>
-
-<p><strong>Notice Period:</strong> Immediate Joiner<br>
-<strong>Location:</strong> Gurgaon (open to on-site, hybrid, or remote)</p>
 
 <p>Resume attached &mdash; happy to connect if there's a relevant opening.</p>
 
@@ -233,12 +263,14 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p>I'm a Java Backend Engineer (2+ yrs) at AlignBits LLC, looking for backend/software engineer roles.</p>
+<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
 
-<table style="border-collapse: collapse; margin: 12px 0;">
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 4px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL</td></tr>
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 4px 0;">Immediate Joiner</td></tr>
-<tr><td style="padding: 4px 12px 4px 0; color: #666;"><strong>Location</strong></td><td style="padding: 4px 0;">Gurgaon (flexible)</td></tr>
+<p>Currently at AlignBits — enterprise B2B integration platform. Previously: Healthcare backend at IHX.</p>
+
+<table style="border-collapse: collapse; margin: 8px 0;">
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 3px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 3px 0;">Immediate Joiner</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Location</strong></td><td style="padding: 3px 0;">Gurgaon (flexible)</td></tr>
 </table>
 
 <p>Resume attached &mdash; please consider if <strong>{company}</strong> has relevant openings.</p>
