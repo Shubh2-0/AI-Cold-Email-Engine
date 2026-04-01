@@ -168,6 +168,24 @@ Resume attached — happy to connect if there's a relevant opening.
 Shubham Bhati
 {config['phone']} | {config['linkedin']}"""
 
+    elif tier == "TIER4":
+        body = f"""Hi {name},
+
+I'm Shubham Bhati — Java Backend Engineer with 2+ years experience,
+looking for Java Backend / Software Engineer roles.
+
+Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
+Current: Enterprise B2B integration platform (Justransform/AlignBits)
+Previous: Healthcare backend (IHX)
+
+Notice Period: Immediate Joiner
+Location: Gurgaon (on-site / hybrid / remote)
+
+Resume attached.
+
+Shubham Bhati
+{config['phone']} | {config['linkedin']}"""
+
     else:
         body = f"""Hi {name},
 
@@ -251,6 +269,30 @@ def get_html_body(contact, config):
 </table>
 
 <p>Resume attached &mdash; happy to connect if there's a relevant opening.</p>
+
+<p>
+<strong>Shubham Bhati</strong><br>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
+</p>
+</body>
+</html>"""
+
+    elif tier == "TIER4":
+        html = f"""<html>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
+<p>Hi {name},</p>
+
+<p>I'm <strong>Shubham Bhati</strong> — Java Backend Engineer with 2+ years experience, looking for Java Backend / Software Engineer roles.</p>
+
+<table style="border-collapse: collapse; margin: 8px 0;">
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 3px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Current</strong></td><td style="padding: 3px 0;">Enterprise B2B integration platform (Justransform/AlignBits)</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Previous</strong></td><td style="padding: 3px 0;">Healthcare backend (IHX)</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 3px 0;">Immediate Joiner</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Location</strong></td><td style="padding: 3px 0;">Gurgaon (on-site / hybrid / remote)</td></tr>
+</table>
+
+<p>Resume attached.</p>
 
 <p>
 <strong>Shubham Bhati</strong><br>
