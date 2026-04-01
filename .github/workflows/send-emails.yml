@@ -3,6 +3,9 @@ name: Send HR Emails
 on:
   workflow_dispatch: # Manual trigger only
 
+permissions:
+  contents: write
+
 jobs:
   send-emails:
     runs-on: ubuntu-latest
