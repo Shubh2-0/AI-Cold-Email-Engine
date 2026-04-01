@@ -173,16 +173,17 @@ Shubham Bhati
         body = f"""Hi {name},
 
 I'm Shubham Bhati — Java Backend Engineer with 2+ years experience,
-looking for Java Backend / Software Engineer roles.
+applying for the Java Backend / Software Engineer opening.
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
-Current: Enterprise B2B integration platform (Justransform/AlignBits)
-Previous: Healthcare backend (IHX)
+Current: Building enterprise microservices at AlignBits (Justransform
+         platform) — serving 10+ enterprise clients
+Previous: Healthcare backend systems at IHX Private Limited
 
 Notice Period: Immediate Joiner
 Location: Gurgaon (on-site / hybrid / remote)
 
-Resume attached.
+Resume attached. Looking forward to hearing from you.
 
 Shubham Bhati
 {config['phone']} | {config['linkedin']}"""
@@ -284,17 +285,17 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p>I'm <strong>Shubham Bhati</strong> — Java Backend Engineer with 2+ years experience, looking for Java Backend / Software Engineer roles.</p>
+<p>I'm <strong>Shubham Bhati</strong> — Java Backend Engineer with 2+ years experience, applying for the Java Backend / Software Engineer opening.</p>
 
 <table style="border-collapse: collapse; margin: 8px 0;">
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 3px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT</td></tr>
-<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Current</strong></td><td style="padding: 3px 0;">Enterprise B2B integration platform (Justransform/AlignBits)</td></tr>
-<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Previous</strong></td><td style="padding: 3px 0;">Healthcare backend (IHX)</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Current</strong></td><td style="padding: 3px 0;">Building enterprise microservices at AlignBits (Justransform platform) &mdash; serving 10+ enterprise clients</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Previous</strong></td><td style="padding: 3px 0;">Healthcare backend systems at IHX Private Limited</td></tr>
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 3px 0;">Immediate Joiner</td></tr>
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Location</strong></td><td style="padding: 3px 0;">Gurgaon (on-site / hybrid / remote)</td></tr>
 </table>
 
-<p>Resume attached.</p>
+<p>Resume attached. Looking forward to hearing from you.</p>
 
 <p>
 <strong>Shubham Bhati</strong><br>
