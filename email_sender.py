@@ -122,20 +122,19 @@ def get_email_body(contact, config):
     if tier == "TIER1":
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
+Java Backend Engineer | 2+ yrs | Gurgaon
 
 Currently at AlignBits, working on Justransform — an enterprise B2B
 integration platform serving 10+ clients across REST, SFTP, AS2, SOAP.
 
 My contributions:
-  - Delivered client-facing features and production bug fixes
-  - Added new protocol modules (AS2) in production
-  - Java migration (11→17), production deployments (dev + prod)
-  - Production monitoring — alarms, cron jobs, scheduled tasks
+  - Delivered client-facing features and bug fixes
+  - Added new protocol modules (AS2)
+  - Java migration (11→17), dev and prod deployments
+  - Server monitoring — alarms, cron jobs, scheduled tasks
   - Previously: Healthcare backend at IHX
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
-
 Notice Period: Immediate Joiner
 Location: Gurgaon (on-site / hybrid / remote)
 
@@ -147,19 +146,18 @@ Shubham Bhati
     elif tier == "TIER2":
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
+Java Backend Engineer | 2+ yrs | Gurgaon
 
 Currently at AlignBits, working on Justransform — enterprise B2B
 integration platform serving 10+ clients.
 
 My contributions:
-  - Client-facing features and production bug fixes
-  - New protocol modules added in production
-  - Production deployments and monitoring
+  - Client-facing features and bug fixes
+  - New protocol modules added
+  - Dev and prod deployments, server monitoring
   - Previously: Healthcare backend at IHX
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
-
 Notice Period: Immediate Joiner
 Location: Gurgaon (on-site / hybrid / remote)
 
@@ -171,7 +169,7 @@ Shubham Bhati
     else:
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
+Java Backend Engineer | 2+ yrs | Gurgaon
 
 Currently at AlignBits — enterprise B2B integration platform.
 Previously: Healthcare backend at IHX.
@@ -199,16 +197,16 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 2+ yrs | Gurgaon</strong></p>
 
 <p>Currently at AlignBits, working on <strong>Justransform</strong> — an enterprise B2B integration platform serving <strong>10+ clients</strong> across REST, SFTP, AS2, SOAP.</p>
 
 <p><strong>My contributions:</strong></p>
 <ul>
-<li>Delivered client-facing features and production bug fixes</li>
-<li>Added new protocol modules (AS2) in production</li>
-<li>Java migration (11→17), production deployments (dev + prod)</li>
-<li>Production monitoring — alarms, cron jobs, scheduled tasks</li>
+<li>Delivered client-facing features and bug fixes</li>
+<li>Added new protocol modules (AS2)</li>
+<li>Java migration (11→17), dev and prod deployments</li>
+<li>Server monitoring — alarms, cron jobs, scheduled tasks</li>
 <li>Previously: Healthcare backend at IHX</li>
 </ul>
 
@@ -232,14 +230,14 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 2+ yrs | Gurgaon</strong></p>
 
 <p>Currently at AlignBits, working on <strong>Justransform</strong> — enterprise B2B integration platform serving <strong>10+ clients</strong>.</p>
 
 <ul>
-<li>Client-facing features and production bug fixes</li>
-<li>New protocol modules added in production</li>
-<li>Production deployments and monitoring</li>
+<li>Client-facing features and bug fixes</li>
+<li>New protocol modules added</li>
+<li>Dev and prod deployments, server monitoring</li>
 <li>Previously: Healthcare backend at IHX</li>
 </ul>
 
@@ -263,7 +261,7 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 2+ yrs | Gurgaon</strong></p>
 
 <p>Currently at AlignBits — enterprise B2B integration platform. Previously: Healthcare backend at IHX.</p>
 
