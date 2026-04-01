@@ -133,6 +133,8 @@ My contributions:
   - Java migration (11→17), dev and prod deployments
   - Server monitoring — alarms, cron jobs, scheduled tasks
   - Previously: Healthcare backend at IHX
+  - Side project: Built and launched a live e-commerce platform end-to-end
+    (backend, admin panel, payments, deployment) → maakaalicreations.in
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 Notice Period: Immediate Joiner
@@ -208,6 +210,7 @@ def get_html_body(contact, config):
 <li>Java migration (11→17), dev and prod deployments</li>
 <li>Server monitoring — alarms, cron jobs, scheduled tasks</li>
 <li>Previously: Healthcare backend at IHX</li>
+<li>Side project: Built and launched a live e-commerce platform end-to-end (backend, admin panel, payments, deployment) &rarr; <a href="https://maakaalicreations.in" style="color: #1a73e8;">maakaalicreations.in</a></li>
 </ul>
 
 <table style="border-collapse: collapse; margin: 8px 0;">
