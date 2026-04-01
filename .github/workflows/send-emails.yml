@@ -1,10 +1,7 @@
 name: Send HR Emails
 
 on:
-  schedule:
-    # 9:30 AM IST = 4:00 AM UTC (Tuesday, Wednesday, Thursday)
-    - cron: '0 4 * * 2,3,4'
-  workflow_dispatch: # Manual trigger button
+  workflow_dispatch: # Manual trigger only
 
 jobs:
   send-emails:
