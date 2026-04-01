@@ -122,7 +122,7 @@ def get_email_body(contact, config):
     if tier == "TIER1":
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Gurgaon
+Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
 
 Currently at AlignBits, working on Justransform — an enterprise B2B
 integration platform serving 10+ clients across REST, SFTP, AS2, SOAP.
@@ -146,7 +146,7 @@ Shubham Bhati
     elif tier == "TIER2":
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Gurgaon
+Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
 
 Currently at AlignBits, working on Justransform — enterprise B2B
 integration platform serving 10+ clients.
@@ -169,7 +169,7 @@ Shubham Bhati
     else:
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Gurgaon
+Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
 
 Currently at AlignBits — enterprise B2B integration platform.
 Previously: Healthcare backend at IHX.
@@ -197,7 +197,7 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
 
 <p>Currently at AlignBits, working on <strong>Justransform</strong> — an enterprise B2B integration platform serving <strong>10+ clients</strong> across REST, SFTP, AS2, SOAP.</p>
 
@@ -230,7 +230,7 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
 
 <p>Currently at AlignBits, working on <strong>Justransform</strong> — enterprise B2B integration platform serving <strong>10+ clients</strong>.</p>
 
@@ -261,7 +261,7 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
 
 <p>Currently at AlignBits — enterprise B2B integration platform. Previously: Healthcare backend at IHX.</p>
 
