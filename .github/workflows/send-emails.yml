@@ -1,7 +1,11 @@
 name: Send HR Emails
 
 on:
-  workflow_dispatch: # Manual trigger only
+  schedule:
+    # 7:00 AM IST = 1:30 AM UTC (Tuesday, Wednesday, Thursday)
+    # GitHub Actions can delay 1-2 hours, so worst case triggers at 9-10 AM IST
+    - cron: '30 1 * * 2,3,4'
+  workflow_dispatch: # Manual trigger button
 
 permissions:
   contents: write
