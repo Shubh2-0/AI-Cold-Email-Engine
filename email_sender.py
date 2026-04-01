@@ -115,7 +115,8 @@ def get_pending_contacts(csv_path, tier_filter=None):
 
 def get_email_body(contact, config):
     """Generate personalized email body based on company/tier."""
-    name = contact["name"].split()[0] if contact["name"] else "Sir/Madam"
+    raw_name = contact["name"].strip()
+    name = raw_name.split()[0] if raw_name and raw_name.lower() not in ["hr", "team", "hr team"] else "Team"
     company = contact["company"]
     tier = contact["tier"]
 
@@ -208,7 +209,8 @@ Shubham Bhati
 
 def get_html_body(contact, config):
     """Generate HTML version of the email for better formatting."""
-    name = contact["name"].split()[0] if contact["name"] else "Sir/Madam"
+    raw_name = contact["name"].strip()
+    name = raw_name.split()[0] if raw_name and raw_name.lower() not in ["hr", "team", "hr team"] else "Team"
     company = contact["company"]
     tier = contact["tier"]
 
@@ -382,8 +384,8 @@ def send_email(contact, config, preview=False):
 
 def show_status(csv_path, log_path):
     """Show current sending progress."""
-    total = {"TIER1": 0, "TIER2": 0, "TIER3": 0}
-    sent = {"TIER1": 0, "TIER2": 0, "TIER3": 0}
+    total = {"TIER1": 0, "TIER2": 0, "TIER3": 0, "TIER4": 0}
+    sent = {"TIER1": 0, "TIER2": 0, "TIER3": 0, "TIER4": 0}
 
     with open(csv_path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -398,7 +400,7 @@ def show_status(csv_path, log_path):
     print("\n" + "=" * 50)
     print("  EMAIL CAMPAIGN STATUS")
     print("=" * 50)
-    for tier in ["TIER1", "TIER2", "TIER3"]:
+    for tier in ["TIER1", "TIER2", "TIER3", "TIER4"]:
         remaining = total[tier] - sent[tier]
         pct = (sent[tier] / total[tier] * 100) if total[tier] > 0 else 0
         bar = "#" * int(pct / 5) + "-" * (20 - int(pct / 5))
@@ -415,7 +417,7 @@ def show_status(csv_path, log_path):
 def main():
     parser = argparse.ArgumentParser(description="HR Cold Email Sender Tool")
     parser.add_argument("--count", type=int, help="Number of emails to send (overrides config)")
-    parser.add_argument("--tier", choices=["TIER1", "TIER2", "TIER3"], help="Send only to specific tier")
+    parser.add_argument("--tier", choices=["TIER1", "TIER2", "TIER3", "TIER4"], help="Send only to specific tier")
     parser.add_argument("--preview", action="store_true", help="Preview emails without sending")
     parser.add_argument("--status", action="store_true", help="Show sending progress")
     parser.add_argument("--test", action="store_true", help="Send test email to yourself")
