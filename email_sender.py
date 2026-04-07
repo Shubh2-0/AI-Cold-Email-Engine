@@ -123,7 +123,7 @@ def get_email_body(contact, config):
     if tier == "TIER1":
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
+Java Backend Engineer | 3 yrs | Immediate Joiner | Gurgaon
 
 Currently at AlignBits, working on Justransform — an enterprise B2B
 integration platform serving 10+ clients across REST, SFTP, AS2, SOAP.
@@ -133,9 +133,12 @@ My contributions:
   - Added new protocol modules (AS2)
   - Java migration (11→17), dev and prod deployments
   - Server monitoring — alarms, cron jobs, scheduled tasks
+  - Reduced manual debugging by 30%, resolved 15+ production incidents
   - Previously: Healthcare backend at IHX
   - Side project: Built and launched a live e-commerce platform end-to-end
     (backend, admin panel, payments, deployment) → maakaalicreations.in
+  - Personal Project: PayFlow — Microservices-based payment system
+    (Java 17, Spring Boot 3) → github.com/Shubh2-0/PayFlow
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 Notice Period: Immediate Joiner
@@ -144,21 +147,22 @@ Location: Gurgaon (on-site / hybrid / remote)
 Resume attached.
 
 Shubham Bhati
-{config['phone']} | {config['linkedin']}"""
+{config['phone']} | {config['linkedin']} | {config['github']} | {config['portfolio']}"""
 
     elif tier == "TIER2":
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
+Java Backend Engineer | 3 yrs | Immediate Joiner | Gurgaon
 
 Currently at AlignBits, working on Justransform — enterprise B2B
 integration platform serving 10+ clients.
 
 My contributions:
-  - Client-facing features and bug fixes
-  - New protocol modules added
-  - Dev and prod deployments, server monitoring
+  - Client-facing features and bug fixes, resolved 15+ production incidents
+  - Dev and prod deployments, server monitoring (10+ enterprise client pipelines)
   - Previously: Healthcare backend at IHX
+  - Personal Project: PayFlow — Microservices-based payment system
+    (Java 17, Spring Boot 3) → github.com/Shubh2-0/PayFlow
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 Notice Period: Immediate Joiner
@@ -167,18 +171,20 @@ Location: Gurgaon (on-site / hybrid / remote)
 Resume attached — happy to connect if there's a relevant opening.
 
 Shubham Bhati
-{config['phone']} | {config['linkedin']}"""
+{config['phone']} | {config['linkedin']} | {config['github']} | {config['portfolio']}"""
 
     elif tier == "TIER4":
         body = f"""Hi {name},
 
-I'm Shubham Bhati — Java Backend Engineer with 2+ years experience,
+I'm Shubham Bhati — Java Backend Engineer with 3 years experience,
 applying for the Java Backend / Software Engineer opening.
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 Current: Building enterprise microservices at AlignBits (Justransform
          platform) — serving 10+ enterprise clients
 Previous: Healthcare backend systems at IHX Private Limited
+Project: PayFlow — Microservices-based payment system (Java 17, Spring Boot 3)
+         → github.com/Shubh2-0/PayFlow
 
 Notice Period: Immediate Joiner
 Location: Gurgaon (on-site / hybrid / remote)
@@ -186,15 +192,18 @@ Location: Gurgaon (on-site / hybrid / remote)
 Resume attached. Looking forward to hearing from you.
 
 Shubham Bhati
-{config['phone']} | {config['linkedin']}"""
+{config['phone']} | {config['linkedin']} | {config['github']} | {config['portfolio']}"""
 
     else:
         body = f"""Hi {name},
 
-Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon
+Java Backend Engineer | 3 yrs | Immediate Joiner | Gurgaon
 
-Currently at AlignBits — enterprise B2B integration platform.
+Currently at AlignBits — enterprise B2B integration platform serving
+10+ clients. Resolved 15+ production incidents, reduced manual debugging by 30%.
 Previously: Healthcare backend at IHX.
+Project: PayFlow — Microservices payment system (Java 17, Spring Boot 3)
+         → github.com/Shubh2-0/PayFlow
 
 Tech: Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT
 Notice Period: Immediate Joiner
@@ -203,7 +212,7 @@ Location: Gurgaon (flexible)
 Resume attached — please consider if {company} has relevant openings.
 
 Shubham Bhati
-{config['phone']} | {config['linkedin']}"""
+{config['phone']} | {config['linkedin']} | {config['github']} | {config['portfolio']}"""
 
     return body
 
@@ -220,7 +229,7 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 3 yrs | Immediate Joiner | Gurgaon</strong></p>
 
 <p>Currently at AlignBits, working on <strong>Justransform</strong> — an enterprise B2B integration platform serving <strong>10+ clients</strong> across REST, SFTP, AS2, SOAP.</p>
 
@@ -230,8 +239,10 @@ def get_html_body(contact, config):
 <li>Added new protocol modules (AS2)</li>
 <li>Java migration (11→17), dev and prod deployments</li>
 <li>Server monitoring — alarms, cron jobs, scheduled tasks</li>
+<li>Reduced manual debugging by 30%, resolved 15+ production incidents</li>
 <li>Previously: Healthcare backend at IHX</li>
 <li>Side project: Built and launched a live e-commerce platform end-to-end (backend, admin panel, payments, deployment) &rarr; <a href="https://maakaalicreations.in" style="color: #1a73e8;">maakaalicreations.in</a></li>
+<li>Personal Project: <strong>PayFlow</strong> — Microservices-based payment system (Java 17, Spring Boot 3) &rarr; <a href="https://github.com/Shubh2-0/PayFlow" style="color: #1a73e8;">github.com/Shubh2-0/PayFlow</a></li>
 </ul>
 
 <table style="border-collapse: collapse; margin: 8px 0;">
@@ -244,7 +255,7 @@ def get_html_body(contact, config):
 
 <p>
 <strong>Shubham Bhati</strong><br>
-{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a> | <a href="https://{config['github']}" style="color: #1a73e8;">GitHub</a> | <a href="https://{config['portfolio']}" style="color: #1a73e8;">Portfolio</a>
 </p>
 </body>
 </html>"""
@@ -254,15 +265,15 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 3 yrs | Immediate Joiner | Gurgaon</strong></p>
 
 <p>Currently at AlignBits, working on <strong>Justransform</strong> — enterprise B2B integration platform serving <strong>10+ clients</strong>.</p>
 
 <ul>
-<li>Client-facing features and bug fixes</li>
-<li>New protocol modules added</li>
-<li>Dev and prod deployments, server monitoring</li>
+<li>Client-facing features and bug fixes, resolved 15+ production incidents</li>
+<li>Dev and prod deployments, server monitoring (10+ enterprise client pipelines)</li>
 <li>Previously: Healthcare backend at IHX</li>
+<li>Personal Project: <strong>PayFlow</strong> — Microservices payment system (Java 17, Spring Boot 3) &rarr; <a href="https://github.com/Shubh2-0/PayFlow" style="color: #1a73e8;">github.com/Shubh2-0/PayFlow</a></li>
 </ul>
 
 <table style="border-collapse: collapse; margin: 8px 0;">
@@ -275,7 +286,7 @@ def get_html_body(contact, config):
 
 <p>
 <strong>Shubham Bhati</strong><br>
-{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a> | <a href="https://{config['github']}" style="color: #1a73e8;">GitHub</a> | <a href="https://{config['portfolio']}" style="color: #1a73e8;">Portfolio</a>
 </p>
 </body>
 </html>"""
@@ -285,12 +296,13 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p>I'm <strong>Shubham Bhati</strong> — Java Backend Engineer with 2+ years experience, applying for the Java Backend / Software Engineer opening.</p>
+<p>I'm <strong>Shubham Bhati</strong> — Java Backend Engineer with 3 years experience, applying for the Java Backend / Software Engineer opening.</p>
 
 <table style="border-collapse: collapse; margin: 8px 0;">
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 3px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT</td></tr>
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Current</strong></td><td style="padding: 3px 0;">Building enterprise microservices at AlignBits (Justransform platform) &mdash; serving 10+ enterprise clients</td></tr>
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Previous</strong></td><td style="padding: 3px 0;">Healthcare backend systems at IHX Private Limited</td></tr>
+<tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Project</strong></td><td style="padding: 3px 0;"><strong>PayFlow</strong> — Microservices payment system (Java 17, Spring Boot 3) &rarr; <a href="https://github.com/Shubh2-0/PayFlow" style="color: #1a73e8;">github.com/Shubh2-0/PayFlow</a></td></tr>
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Notice Period</strong></td><td style="padding: 3px 0;">Immediate Joiner</td></tr>
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Location</strong></td><td style="padding: 3px 0;">Gurgaon (on-site / hybrid / remote)</td></tr>
 </table>
@@ -299,7 +311,7 @@ def get_html_body(contact, config):
 
 <p>
 <strong>Shubham Bhati</strong><br>
-{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a> | <a href="https://{config['github']}" style="color: #1a73e8;">GitHub</a> | <a href="https://{config['portfolio']}" style="color: #1a73e8;">Portfolio</a>
 </p>
 </body>
 </html>"""
@@ -309,9 +321,11 @@ def get_html_body(contact, config):
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6;">
 <p>Hi {name},</p>
 
-<p><strong>Java Backend Engineer | 2+ yrs | Immediate Joiner | Gurgaon</strong></p>
+<p><strong>Java Backend Engineer | 3 yrs | Immediate Joiner | Gurgaon</strong></p>
 
-<p>Currently at AlignBits — enterprise B2B integration platform. Previously: Healthcare backend at IHX.</p>
+<p>Currently at AlignBits — enterprise B2B integration platform serving <strong>10+ clients</strong>. Resolved 15+ production incidents, reduced manual debugging by 30%. Previously: Healthcare backend at IHX.</p>
+
+<p>Project: <strong>PayFlow</strong> — Microservices payment system (Java 17, Spring Boot 3) &rarr; <a href="https://github.com/Shubh2-0/PayFlow" style="color: #1a73e8;">github.com/Shubh2-0/PayFlow</a></p>
 
 <table style="border-collapse: collapse; margin: 8px 0;">
 <tr><td style="padding: 3px 12px 3px 0; color: #666;"><strong>Tech</strong></td><td style="padding: 3px 0;">Java, Spring Boot, Microservices, REST APIs, MySQL, Docker, JWT</td></tr>
@@ -323,7 +337,7 @@ def get_html_body(contact, config):
 
 <p>
 <strong>Shubham Bhati</strong><br>
-{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a>
+{config['phone']} | <a href="https://{config['linkedin']}" style="color: #1a73e8;">LinkedIn</a> | <a href="https://{config['github']}" style="color: #1a73e8;">GitHub</a> | <a href="https://{config['portfolio']}" style="color: #1a73e8;">Portfolio</a>
 </p>
 </body>
 </html>"""

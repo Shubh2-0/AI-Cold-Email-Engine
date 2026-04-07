@@ -7,7 +7,7 @@
     "delay_between_emails_seconds": 180,
     "contacts_csv": "contacts.csv",
     "sent_log": "sent_log.csv",
-    "subject_template": "Java Backend Engineer | Immediate Joiner | Spring Boot, 2+ Yrs",
+    "subject_template": "Java Backend Engineer for {company} | Immediate Joiner | Spring Boot, 3 Yrs",
     "phone": "+91 6232133187",
     "linkedin": "linkedin.com/in/bhatishubham",
     "github": "github.com/Shubh2-0",
