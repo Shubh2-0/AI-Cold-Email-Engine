@@ -3,7 +3,7 @@
     "sender_email": "shubhambhati226@gmail.com",
     "app_password": "xqfdiaxyzpqmjjfx",
     "resume_path": "Shubham_Bhati_Resume.pdf",
-    "daily_limit": 25,
+    "daily_limit": 50,
     "delay_between_emails_seconds": 180,
     "contacts_csv": "contacts.csv",
     "sent_log": "sent_log.csv",
