@@ -1,14 +1,14 @@
 tier,name,email,title,company,sent
-TIER1,Shipra Pandit,shipra.pandit@juspay.in,Director - HR,JUSPAY,NO
-TIER1,Humera Iffath,humera.iffath@truecaller.com,Human Resources Director - India,Truecaller,NO
-TIER1,Heena Bawa,heena@clevertap.com,Director HR,CleverTap,NO
-TIER1,Swetha Harikrishnan,swetha@hackerearth.com,HR Director,HackerEarth,NO
-TIER1,Niharika Patel,niharika.patel@jetsynthesys.com,CHRO,JetSynthesys,NO
+TIER1,Shipra Pandit,shipra.pandit@juspay.in,Director - HR,JUSPAY,YES
+TIER1,Humera Iffath,humera.iffath@truecaller.com,Human Resources Director - India,Truecaller,YES
+TIER1,Heena Bawa,heena@clevertap.com,Director HR,CleverTap,YES
+TIER1,Swetha Harikrishnan,swetha@hackerearth.com,HR Director,HackerEarth,YES
+TIER1,Niharika Patel,niharika.patel@jetsynthesys.com,CHRO,JetSynthesys,YES
 TIER1,Amritesh Shukla,amritesh.shukla@mygate.com,Head Of Human Resources,MyGate,NO
-TIER1,Rinki Goel,rinki.goel@hevodata.com,Director - HR,Hevo Data,NO
-TIER1,Dharmik Gohel,dharmik@atlan.com,Director - Talent Acquisition,Atlan,NO
-TIER1,Preetham Singh,preetham.singh@tanla.com,Chief Human Resources Officer,Tanla Platforms,NO
-TIER1,Janaki Naik,janaki.naik@tatadigital.com,Chief Human Resources Officer,Tata Digital,NO
+TIER1,Rinki Goel,rinki.goel@hevodata.com,Director - HR,Hevo Data,YES
+TIER1,Dharmik Gohel,dharmik@atlan.com,Director - Talent Acquisition,Atlan,YES
+TIER1,Preetham Singh,preetham.singh@tanla.com,Chief Human Resources Officer,Tanla Platforms,YES
+TIER1,Janaki Naik,janaki.naik@tatadigital.com,Chief Human Resources Officer,Tata Digital,YES
 TIER1,Amit Prayagi,amit.prayagi@claimgenius.com,Head Of Recruitment & HR Operation,Claim Genius,YES
 TIER1,Anand Khot,anandk@pharmarack.com,Chief Human Resources Officer,Pharmarack,YES
 TIER1,Anita Sidhwani,asidhwani@cleo.com,Head HR,Cleo,YES
@@ -90,22 +90,22 @@ TIER2,Deepak Deshpande,deepak.deshpande@netmagicsolutions.com,Vice President - H
 TIER2,Dipti Goel,dipti@insider.in,Head Of Human Resources,Paytm Insider,NO
 TIER2,Disha Bali,disha.bali@remitonline.info,Head HR,Fable Fintech,NO
 TIER2,Divya Dang,divya.dang@cloudanalogy.com,Sr. HR Head,Cloud Analogy,NO
-TIER2,Divya Jethi,divya.jethi@cloudanalogy.com,Sr. HR Head,Cloud Analogy,NO
-TIER2,Ekta Chowdhry,ekta.chowdhry@shipsy.io,Head of Talent Acquisition,Shipsy,NO
-TIER2,Eram Qudsia,eram.qudsia@mygate.in,Head of Human Resources,MyGate,NO
-TIER2,Gargi Rajan,gargi.rajan@unicommerce.com,Associate Director - Human Resources,Unicommerce eSolutions,NO
-TIER2,Garima Pandey,garima.pandey@rategain.com,Associate Director - Global Talent Acquisition,RateGain,NO
-TIER2,Harshiika Upadhyay,husahu@ciphercloud.com,Director Talent Acquisition,NTT DATA,NO
-TIER2,Hemraj Desai,hemraj@cloudthat.in,Director HR and OD,CloudThat,NO
-TIER2,Joshua Henry,joshua.henry@cloudsek.com,Associate Vice President - Talent Acquisition,CloudSEK,NO
-TIER2,Jyoti Gouri,jyoti.g@commerceiq.ai,Director - HR,CommerceIQ,NO
-TIER2,Kanhaiya Sharma,kanhaiya@cloudthing.com,Head Of Human Resources,cloudThing,NO
-TIER2,Kulvir Kaur,kulvir.kaur@cloudeq.com,HOD Human Resource,cloudEQ,NO
-TIER2,Luisa Mohanty,luisa.mohanty@rategain.com,Associate Vice President - Human Resources,RateGain,NO
-TIER2,Maanoj Mishra,maanoj@betterplace.co.in,Group Head HR,BetterPlace,NO
-TIER2,Madhvi Arora,madhvi.arora@yodlee.com,Vice President & Head HR,Envestnet,NO
-TIER2,Manav Jain,manav.jain@loconav.com,Chief Human Resources Officer,LocoNav,NO
-TIER2,Manjiri Patel-Shinde,manjiri.shinde@cloudmoyo.com,Vice President Global HR,CloudMoyo,NO
+TIER2,Divya Jethi,divya.jethi@cloudanalogy.com,Sr. HR Head,Cloud Analogy,YES
+TIER2,Ekta Chowdhry,ekta.chowdhry@shipsy.io,Head of Talent Acquisition,Shipsy,YES
+TIER2,Eram Qudsia,eram.qudsia@mygate.in,Head of Human Resources,MyGate,YES
+TIER2,Gargi Rajan,gargi.rajan@unicommerce.com,Associate Director - Human Resources,Unicommerce eSolutions,YES
+TIER2,Garima Pandey,garima.pandey@rategain.com,Associate Director - Global Talent Acquisition,RateGain,YES
+TIER2,Harshiika Upadhyay,husahu@ciphercloud.com,Director Talent Acquisition,NTT DATA,YES
+TIER2,Hemraj Desai,hemraj@cloudthat.in,Director HR and OD,CloudThat,YES
+TIER2,Joshua Henry,joshua.henry@cloudsek.com,Associate Vice President - Talent Acquisition,CloudSEK,YES
+TIER2,Jyoti Gouri,jyoti.g@commerceiq.ai,Director - HR,CommerceIQ,YES
+TIER2,Kanhaiya Sharma,kanhaiya@cloudthing.com,Head Of Human Resources,cloudThing,YES
+TIER2,Kulvir Kaur,kulvir.kaur@cloudeq.com,HOD Human Resource,cloudEQ,YES
+TIER2,Luisa Mohanty,luisa.mohanty@rategain.com,Associate Vice President - Human Resources,RateGain,YES
+TIER2,Maanoj Mishra,maanoj@betterplace.co.in,Group Head HR,BetterPlace,YES
+TIER2,Madhvi Arora,madhvi.arora@yodlee.com,Vice President & Head HR,Envestnet,YES
+TIER2,Manav Jain,manav.jain@loconav.com,Chief Human Resources Officer,LocoNav,YES
+TIER2,Manjiri Patel-Shinde,manjiri.shinde@cloudmoyo.com,Vice President Global HR,CloudMoyo,YES
 TIER2,Medhika Sood,medhika@uniphore.com,Associate Director : TM | L&D,Uniphore,NO
 TIER2,Mohammed Hussain,mohammed@uniphore.com,Director - Talent Acquisition,Uniphore,NO
 TIER2,Namita Sinha,namita.sinha@sunlife.com,Head of Talent Acquisition (Asia Services Centre India),Sun Life,NO
@@ -144,7 +144,7 @@ TIER2,Shamli Krishnan,shamli.krishnan@cloudmoyo.com,Associate Director - Talent 
 TIER2,Sharon Narang,sharon.narang@wibmo.com,Head of HR,Wibmo,NO
 TIER2,Sharvari Lingayat,sharvari.lingayat@milessoft.com,Vice President Human Resources,EbixCash Financial Technologies,NO
 TIER2,Shashank Shekher,shashank.s@replicon.com,Head Of Talent Acquisition,Replicon,NO
-TIER2,Shipra Pandit,shipra.pandit@juspay.in,Director - HR,JUSPAY,NO
+TIER2,Shipra Pandit,shipra.pandit@juspay.in,Director - HR,JUSPAY,YES
 TIER2,Shirish Bavdekar,shirish.bavdekar@3ds.com,Head of Talent Acquisition (India),Dassault Systems,NO
 TIER2,Shobana Kailash,shobana@hubilo.com,Chief People Officer,Hubilo,NO
 TIER2,Sirisha P,sp@calliduscloud.com,"Director, HR & Talent - India",CallidusCloud,NO
@@ -239,7 +239,7 @@ TIER3,Ravi Vattikota,ravi.vattikota@itelligencegroup.com,"VP, SAP Staffing & Del
 TIER3,Ravindra Musunuru,ravindra.musunuru@prowesssoft.com,Vice President Human Resources,Prowess Software Services,NO
 TIER3,Renu Srivastava,renu.srivastava@agdata.com,India HR Head,"AGDATA, LP",NO
 TIER3,Reshma Bopanna,reshma.bopanna@girmiti.com,AVP-Human Resources,Girmiti Software,NO
-TIER3,Rinki Goel,rinki.goel@hevodata.com,Director - HR,Hevo Data,NO
+TIER3,Rinki Goel,rinki.goel@hevodata.com,Director - HR,Hevo Data,YES
 TIER3,Rishabh Jain,rishabh.jain@angara.com,Head - Human Resource,Angara E-Commerce,NO
 TIER3,Rohit Jain,rohit.jain@kalelogistics.com,AVP HR,Kale Logistics Solutions,NO
 TIER3,Rupali Bagaddeo,rbagaddeo@microproindia.com,Head - HR & Admin,Micropro Software Solutions,NO
