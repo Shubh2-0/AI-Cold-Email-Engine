@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="banner.png" alt="Banner" width="100%" height="250" style="object-fit: cover; border-radius: 12px;"/>
+  <img src="banner.png" alt="Banner" width="80%" height="80%" style="object-fit: cover; border-radius: 12px;"/>
   
   <br><br>
   
